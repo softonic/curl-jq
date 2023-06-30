@@ -10,9 +10,4 @@ RUN apk update &&       \
     apk add --no-cache curl jq bash git coreutils zip openssh &&  \
     rm -rf /var/cache/apk/*
 
-LABEL org.opencontainers.image.licenses="MIT"
-LABEL org.opencontainers.image.source="https://gitlab.com/gitlab-ci-utils/curl-jq"
-LABEL org.opencontainers.image.title="curl-jq"
-LABEL org.opencontainers.image.url="https://gitlab.com/gitlab-ci-utils/curl-jq"
-
 CMD [ "bash" ]
